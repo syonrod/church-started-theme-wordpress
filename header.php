@@ -41,7 +41,7 @@
 				
 				)); 
 		?>
-      </div>
+     
       <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
         <li class="dropdown">

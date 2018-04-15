@@ -11,4 +11,19 @@ function church_script_enqueue()
 add_action('wp_enqueue_scripts', 'church_script_enqueue');
 
 
+function church_theme_setup(){
+	add_theme_support('menus');
+
+	register_nav_menu('primary', 'Primary Header Navigation');
+	register_nav_menu('secondary', 'Footer Navigation');
+}
+
+add_action('init', 'church_theme_setup');
+
+
+
+
+
+
+
  ?>

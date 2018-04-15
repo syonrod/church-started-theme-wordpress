@@ -1,6 +1,10 @@
 
-<footer><?php wp_nav_menu(array('theme_location'=>'secondary')); ?></footer>
+		<footer>
+			<?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
+		</footer>
 
-<?php wp_footer(); ?>
+	</div> <!-- .Container -->
+	<?php wp_footer(); ?>
+
 </body>
 </html>

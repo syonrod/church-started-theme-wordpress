@@ -12,6 +12,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<figure class="img-responsive">
+				
 					<?php the_post_thumbnail('medium_large'); ?>		
 			</figure>
 		</div>

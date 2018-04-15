@@ -1,4 +1,5 @@
 <?php 
+
 /*=============================================
 =            Include scripts 	            =
 =============================================*/
@@ -26,7 +27,8 @@ add_action('wp_enqueue_scripts', 'church_script_enqueue');
 /*=============================================
 =            Active menus 	            =
 =============================================*/
-function church_theme_setup(){
+function church_theme_setup()
+{
 	add_theme_support('menus');
 
 	register_nav_menu('primary', 'Primary Header Navigation');
@@ -42,6 +44,26 @@ add_theme_support('post-thumbnails');
 add_theme_support('post-formats', array('aside','image','video'));
 
 
+/*=============================================
+=            Sidebar function 	            =
+=============================================*/
+
+function church_widget_setup()
+{
+	register_sidebar( 
+		array(
+			'name'			=> 	'Sidebar',
+			'id'			=> 	'sidebar-1',
+			'class'			=> 	'sidebar-custom',
+			'description'	=>	'Standard Sidebar',
+			'before_widget' => '<li id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</li>',
+			'before_title'  => '<h1 class="widgettitle">',
+			'after_title'   => '</h1>'
+		) );
+}
+
+add_action('widgets_init', 'church_widget_setup');
 
 
  ?>

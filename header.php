@@ -62,5 +62,7 @@
 		</div>
 		
 	</div>
+</div> <!-- .Container -->
 
+<div class="col-xs-12">
 

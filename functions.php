@@ -8,15 +8,15 @@ function church_script_enqueue()
 {
 	//CSS
 	wp_enqueue_style( 'bootstrapstyle' , get_template_directory_uri() . '/assets/css/bootstrap.min.css' , array(), '3.3.4', 'all');
+	wp_enqueue_style( 'materializestyle' , get_template_directory_uri() . '/assets/css/materialize.css' , array(), '1.0.0', 'all');
+	wp_enqueue_style( 'normalizestyle' , get_template_directory_uri() . '/assets/css/normalize.css' , array(), '8.0.9', 'all');
 	wp_enqueue_style( 'churchcustomstyle' , get_template_directory_uri() . '/assets/css/churchstyle.css' , array(), '1.0.0', 'all');
 
 	//JS
 	wp_enqueue_script( 'customjquery' , get_template_directory_uri() . '/assets/js/jquery.js' , array(), '3.3.1', true);
+	wp_enqueue_script( 'materializejs' , get_template_directory_uri() . '/assets/js/materialize.js' , array(), '1.0.0', true);
 	wp_enqueue_script( 'bootstrapjs' , get_template_directory_uri() . '/assets/js/bootstrap.min.js' , array(), '3.3.4', true);
 	wp_enqueue_script( 'churchcustomjs' , get_template_directory_uri() . '/assets/js/churchscript.js' , array(), '1.0.0', true);
-
-	
-
 
 }
 

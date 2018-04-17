@@ -1,8 +1,50 @@
-body {
-  margin: 0 !important;
-  padding: 0 !important; }
+body .body__content {
+  padding: 0 !important;
+  margin: 0 !important; }
 
-.wp-post-image {
-  width: 100%; }
+article.post {
+  height: 110px;
+  background-color: #F0F8FF;
+  margin: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 0; }
+  article.post img.wp-post-image {
+    align-self: center;
+    width: 110px;
+    height: 110px; }
+  article.post .post__title__right {
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    width: 100%;
+    padding-left: 0.3em;
+    font-size: 0.9em; }
+    article.post .post__title__right h1 {
+      order: 1;
+      width: 100%;
+      line-height: 50%; }
+    article.post .post__title__right h1.entry-title a {
+      font-size: 0.6em; }
+    article.post .post__title__right small {
+      order: 2;
+      align-self: flex-end;
+      text-align: right;
+      padding: 1em;
+      line-height: 50%;
+      width: 100%;
+      height: 40px; }
+      article.post .post__title__right small ul {
+        list-style: none !important; }
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=churchstyle.css.map */

@@ -6,5 +6,6 @@
 </div> <!-- col-xs-12 container -->	
 	<?php wp_footer(); ?>
 
+
 </body>
 </html>

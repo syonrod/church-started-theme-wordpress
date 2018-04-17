@@ -1,29 +1,24 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<a href="<?php echo get_permalink() ?>"><article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+	<?php 
+	the_post_thumbnail('thumbnail'); //Left
+	?>
 
-	<header class="entry-header">
-		<div class="col-xs-12">
-			<?php 
-			the_title(sprintf('<h1 class="entry-title"><a href="%s">', esc_url( get_permalink())),'</a></h1>'); 
+	<div class="post__title__right">
+		<?php 
+			the_title(sprintf('<h1 class="entry-title"><a href="%s">', esc_url(get_permalink())),'</a></h1>'); //Right
 		?>
-		<small>Posted on: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in <?php the_category(); ?></small>
-		</div>
-	</header>
-
-	<div class="row">
-		<div class="col-xs-12">
-			<figure class="img-responsive">
-				
-					<?php the_post_thumbnail('medium_large'); ?>		
-			</figure>
-		</div>
-
-		<div class="col-xs-12 col-sm-8">
-			<?php the_content(); ?>
-		</div>
+		<small><p>Posted on: <?php 
+					the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in<?php the_category(); 
+			?></p> 
+			
+		</small> <!-- Right -->
 	</div>
 	
+
+	<!-- <?php //the_content(); ?> -->
 <hr>
-</article>
+</article></a>
 
 
 

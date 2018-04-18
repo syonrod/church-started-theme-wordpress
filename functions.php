@@ -66,4 +66,21 @@ function church_widget_setup()
 add_action('widgets_init', 'church_widget_setup');
 
 
+
+
+
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+
+
+
+
+
  ?>
+
+

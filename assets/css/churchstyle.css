@@ -2,6 +2,22 @@ body .body__content {
   padding: 0 !important;
   margin: 0 !important; }
 
+footer {
+  height: 60vh;
+  padding: 1em;
+  background-color: #242424; }
+  footer .menu-footer-navigation-container {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center; }
+    footer .menu-footer-navigation-container ul {
+      margin: 0; }
+      footer .menu-footer-navigation-container ul li {
+        margin: 0.5em;
+        background-color: black; }
+        footer .menu-footer-navigation-container ul li a {
+          color: white !important; }
+
 article.post {
   height: 110px;
   background-color: #F0F8FF;
@@ -56,16 +72,23 @@ article.post .post__title__right small ul {
 div.frontpost {
   padding: 1em;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 300px; }
-  div.frontpost .card {
-    margin: 1em;
-    width: 300px;
-    height: 300px; }
+  grid-template-columns: auto;
+  grid-template-rows: 300px 300px 300px; }
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /* Using SCSS variables to store breakpoints */
+@media (min-width: 650px) {
+  div.frontpost {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px; }
+    div.frontpost .cardpapa {
+      padding: 1em; }
+      div.frontpost .cardpapa .card {
+        height: 320px;
+        margin: 0; }
+        div.frontpost .cardpapa .card span.card-title {
+          font-size: 20px; } }
 /*# sourceMappingURL=churchstyle.css.map */
 
 /*# sourceMappingURL=churchstyle.css.map */

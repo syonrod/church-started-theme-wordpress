@@ -1,7 +1,30 @@
 body .body__content {
   padding: 0 !important;
   margin: 0 !important; }
-
+footer{
+  height: 60vh;
+  padding: 1em;
+  background-color: rgb(36, 36, 36);
+  .menu-footer-navigation-container{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    
+    ul{
+    margin: 0;
+    
+    
+    li{
+      margin: 0.5em;
+      background-color: black;
+      a{
+        color: white !important;
+      }
+    }
+  }
+  }
+  
+}
 article.post {
   height: 110px;
   background-color: #F0F8FF;
@@ -50,14 +73,8 @@ article.post {
  div.frontpost{
   	padding: 1em;
 	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: 300px;
-
-	.card{
-		margin: 1em;
-		width: 300px;
-		height: 300px;
-	}
+	grid-template-columns: auto;
+	grid-template-rows: 300px 300px 300px;
 
   }
 
@@ -66,9 +83,29 @@ article.post {
 
 
 /* Using SCSS variables to store breakpoints */
-$breakpoint-tablet: 900px;
+$breakpoint-tablet: 650px;
 @media (min-width: $breakpoint-tablet) {
-  
+  div.frontpost{
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 350px;
+	// background: yellow;
+
+	.cardpapa{
+		// background: red;
+		padding: 1em;
+
+		.card{
+			height: 320px;
+			margin: 0;
+			span.card-title{
+				font-size: 20px;
+
+			}
+
+		}
+	}
+
+  }
 }
 
 /*# sourceMappingURL=churchstyle.css.map */

@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 <div class="slider">
     <ul class="slides">
       <li>
@@ -21,7 +19,7 @@
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg-3.jpg"> <!-- random image -->
         <div class="caption right-align">
-          <h2>Right Aligned Caption</h2>
+          <h2>Pagina nueva Maranatha</h2>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">Here's our small slogan.</h5>
         </div>
       </li>
@@ -45,7 +43,7 @@
         $casadeluzPosts->the_post(); ?>
 
 
-        <div class="col s12-m6">
+        <div class="col s12-m6 cardpapa">
           <div class="card">
             <div class="card-image">
               <?php the_post_thumbnail('thumbnail'); ?>
@@ -56,9 +54,6 @@
             </div>
           </div>
         </div>
- 
-          
-
 
     <?php endwhile;
     else:

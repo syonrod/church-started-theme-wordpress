@@ -1,3 +1,5 @@
+
+
 body .body__content {
   padding: 0 !important;
   margin: 0 !important; }
@@ -6,7 +8,7 @@ footer{
   padding: 1em;
   background-color: rgb(36, 36, 36);
   .menu-footer-navigation-container{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     
@@ -18,12 +20,16 @@ footer{
       margin: 0.5em;
       background-color: black;
       a{
-        color: white !important;
+        color: #FFFFFF !important;
       }
     }
   }
   }
-  
+  address.section-address{
+    color: #FFFFFF;
+    padding: 0.5em;
+    text-align: center;
+  }
 }
 article.post {
   height: 110px;
@@ -71,10 +77,50 @@ article.post {
   font-size: 1.5em !important; }
 
  div.frontpost{
-  	padding: 1em;
+  padding: 1em;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  .cardpapa{
+    .card{
+      width: 250px;
+      margin: 0 auto;
+      .card-image{
+        img{
+          filter: brightness(50%);
+          z-index: 1;
+        }
+        }
+        span.card-title{
+        color: #FFFFFF;
+        z-index: 2;
+      }
+    }
+  }
+
+  }
+
+  div.frontpostcontent{
+  padding: 1em;
+	display: grid;
+	grid-template-columns: auto;
+  .cardpapa{
+    .card{
+      width: 250px;
+      margin: 0 auto;
+      .card-image{
+        img{
+          height: 250px;
+          filter: brightness(50%);
+          z-index: 1;
+        }
+        }
+        span.card-title{
+        color: #FFFFFF;
+        z-index: 2;
+      }
+    }
+  }
 
   }
 

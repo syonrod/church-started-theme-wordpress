@@ -36,19 +36,19 @@
   <div class="frontpost">
  
   <?php
-  $args = array('cat' => '1', 'posts_per_page' => '3', 'order' => 'DESC','post_status' => 'publish' );
+  $args = array('cat' => '1', 'posts_per_page' => '4', 'order' => 'DESC','post_status' => 'publish' );
   $casadeluzPosts = new WP_Query($args);
     if ($casadeluzPosts->have_posts()):
       while ($casadeluzPosts->have_posts()):
         $casadeluzPosts->the_post(); ?>
 
 
-        <div class="col s12-m6 cardpapa">
+      <div class="col s12-m6 cardpapa">
           <div class="card">
-            <div class="card-image">
-              <?php the_post_thumbnail('thumbnail'); ?>
-              <span class="card-title"><?php the_title(); ?></span>
-            </div>
+            <a href="<?php echo get_permalink() ?>"><div class="card-image">
+            <?php the_post_thumbnail('thumbnail'); ?>
+            <span class="card-title"><?php the_title(); ?></span>
+            </div></a>
             <div class="card-content">
               <?php the_excerpt(); ?>
             </div>
@@ -62,7 +62,7 @@
   ?>
 
 
-  </div> 
+  </div>
 
 <?php get_footer(); ?>
 

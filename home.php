@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-<?php 
-	if(have_posts()):
-		while(have_posts()): the_post();
+<?php
+$args = array('order' => 'DESC','post_status' => 'publish' );
+  $myposts = new WP_Query($args);
+	if($myposts->have_posts()):
+		while($myposts->have_posts()): $myposts->the_post();
 ?>
  	<?php get_template_part('content', get_post_format()); ?>
  	

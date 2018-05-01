@@ -7,7 +7,7 @@ footer {
   padding: 1em;
   background-color: #242424; }
   footer .menu-footer-navigation-container {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center; }
     footer .menu-footer-navigation-container ul {
@@ -16,7 +16,11 @@ footer {
         margin: 0.5em;
         background-color: black; }
         footer .menu-footer-navigation-container ul li a {
-          color: white !important; }
+          color: #FFFFFF !important; }
+  footer address.section-address {
+    color: #FFFFFF;
+    padding: 0.5em;
+    text-align: center; }
 
 article.post {
   height: 110px;
@@ -74,6 +78,30 @@ div.frontpost {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 300px 300px 300px; }
+  div.frontpost .cardpapa .card {
+    width: 250px;
+    margin: 0 auto; }
+    div.frontpost .cardpapa .card .card-image img {
+      filter: brightness(50%);
+      z-index: 1; }
+    div.frontpost .cardpapa .card span.card-title {
+      color: #FFFFFF;
+      z-index: 2; }
+
+div.frontpostcontent {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto; }
+  div.frontpostcontent .cardpapa .card {
+    width: 250px;
+    margin: 0 auto; }
+    div.frontpostcontent .cardpapa .card .card-image img {
+      height: 250px;
+      filter: brightness(50%);
+      z-index: 1; }
+    div.frontpostcontent .cardpapa .card span.card-title {
+      color: #FFFFFF;
+      z-index: 2; }
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
